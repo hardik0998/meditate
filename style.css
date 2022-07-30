@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./imges/fantasy-g1fff856e4_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+    /* margin-left: 56px; */
+
+}
+
+.btn{
+    width: 170px;
+    padding: 13px;
+    background-color:transparent;
+    border: 3px solid #fff;
+    margin: 34px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    /* pointer-events: none; */
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+}
+
+#timer{
+    position: relative;
+    right: 60px;
+}
+#timer svg{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform: translate(-30%,-20%);
+    height: 47vh;
+    pointer-events: none;
+}
+.time-display{
+    position: absolute;
+    top: 250px;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
+video{
+    display: none;
+}
+#player{
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+#player button{
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    padding: 30px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+#player button:nth-child(1){
+background: #558ac8;
+}
+#player button:nth-child(2){
+background: rgb(192, 18, 76);
+}
+#player img{
+    height: 100%;
+}
+@media screen and (max-width:850px){
+    .btn{
+        position: relative;
+        bottom: -200px;
+        left: 190px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 90px;
+        padding: 10px;
+        justify-content: flex-end;
+        }
+        #timer{
+            position: relative;
+            right: 220px;
+            bottom: 90px;
+        }
+        #timer svg{
+            position: absolute;
+            top: -10%;
+            left: -90%;
+            transform: translate(-30%,-20%);
+            height: 17vh;
+            cursor: pointer;
+        }
+        .time-display{
+           margin: -30px;
+        }
+    
+        .play{
+            height: 70px;
+            width: 70px;
+        }
+        #player{
+            position: absolute;
+            top: 3px;
+            left: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        
+        }
+        .moving-outline{
+            display: inline-block;
+        }
+        .time-display{
+            position: absolute;
+            top: 150px;
+            right: 30px;
+            font-size: 50px;
+            color: #fff;
+        }
+        
+        #player button{
+            margin: 10px;
+            border-radius: 50%;
+            border: none;
+            padding: 30px;
+            height: 70px;
+            width: 70px;
+            cursor: pointer;
+        }
+}
+
+
+@media screen and (max-width:500px){
+    .btn{
+    position: relative;
+    bottom: -200px;
+    left: 190px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 90px;
+    padding: 10px;
+    justify-content: flex-end;
+    }
+    #timer{
+        position: relative;
+        right: 220px;
+        bottom: 90px;
+    }
+    #timer svg{
+        position: absolute;
+        top: -10%;
+        left: -90%;
+        transform: translate(-30%,-20%);
+        height: 17vh;
+        cursor: pointer;
+    }
+    .time-display{
+       margin: -30px;
+    }
+
+    .play{
+        height: 70px;
+        width: 70px;
+    }
+    #player{
+        position: absolute;
+        top: 3px;
+        left: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    .moving-outline{
+        display: inline-block;
+    }
+    .time-display{
+        position: absolute;
+        top: 150px;
+        right: 30px;
+        font-size: 50px;
+        color: #fff;
+    }
+    #player button{
+        margin: 10px;
+        border-radius: 50%;
+        border: none;
+        padding: 30px;
+        height: 70px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+}
